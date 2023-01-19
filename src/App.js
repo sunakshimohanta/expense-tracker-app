@@ -27,7 +27,7 @@ function App() {
   const handleSubmitButton = event => {
     event.preventDefault();
 
-    if(name !=='' || amount>0){
+    if(name !=='' && amount>0){
       const expense = {name,amount};
       setExpenses([...expenses,expense]);
 
